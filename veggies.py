@@ -13,10 +13,9 @@ import csv
 
 with open('vegetables.csv','w') as f:
 	writer = csv.writer(f)
-	writer.writerow(['name','color'])
+	writer.writerow(['name','color','length of name'])
 	for vegetable in vegetables:
-		writer.writerow([vegetable["name"],vegetable["color"]])
-
+		writer.writerow([vegetable["name"],vegetable["color"],len(vegetable["name"])])
 # In the loop, write the name of each vegetable and the 
 # color into a CSV called vegetables.csv
 
