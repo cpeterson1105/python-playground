@@ -1,1 +1,5 @@
 Hello, my name is Christine Peterson!
+
+with open('testwrite.csv','w') as f:
+	writer = csv.writer(f)
+	writer.writerow(['col1','col2'])
