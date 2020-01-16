@@ -1,6 +1,4 @@
 # By Christine Peterson & Leonie Beyrle
-
-
 #Read vegetables.csv (see previous section) into a variable called vegetables.
 
 import csv
@@ -18,4 +16,4 @@ import json
 
 with open('vegetables.json','w') as f:
 	json.dump(vegetables,f, indent =2)
-	
+
