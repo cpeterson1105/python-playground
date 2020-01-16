@@ -17,8 +17,15 @@ for veg in vegetables:
 print(green_veggies)
 
 #Write the veggies to a json file called greenveggies.json
-
 import json
 
 with open('greenveggies.json','w') as f:
 	json.dump(green_veggies,f)
+
+# Bonus: output another csv called green_vegetables.csv
+
+with open('green_vegetables.csv','w') as f:
+	writer = csv.writer(f)
+	writer.writerow(['name','color'])
+	for vegetable in green_veggies:
+		writer.writerow([vegetable["name"],vegetable["color"]])
